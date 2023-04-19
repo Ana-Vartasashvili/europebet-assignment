@@ -1,5 +1,11 @@
+import { Layout } from '@/components'
+
 function App() {
-  return <div></div>
+  return (
+    <div>
+      <Layout />
+    </div>
+  )
 }
 
 export default App
