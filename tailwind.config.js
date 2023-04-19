@@ -7,6 +7,7 @@ export default {
         background_black_shade_1: '#1C1D1E',
         background_black_shade_2: '#171718',
         background_black_shade_3: '#25292B',
+        background_black_shade_4: '#1E2122',
         gray_shade_1: '#2C3234',
         main_orange: '#EF5A21',
       },

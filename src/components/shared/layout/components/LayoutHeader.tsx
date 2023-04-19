@@ -1,11 +1,11 @@
-import logo from '../../../../assets/icons/logo.png'
-import banner from '../../../../assets/images/banner.jpg'
+import { logoImg, banner } from '@/assets'
+import { Children } from '@/types'
 
-const LayoutHeader = ({ children }: { children: React.ReactNode }) => {
+const LayoutHeader = ({ children }: Children) => {
   return (
     <>
       <div className='flex justify-between px-[1.6rem] py-[1.2rem] items-center medium:hidden'>
-        <img src={logo} alt='Europebet logo' className='h-[2.4rem]' />
+        <img src={logoImg} alt='Europebet logo' className='h-[2.4rem]' />
 
         <div className='flex gap-[1.6rem] font-semibold'>
           <button>Sign up</button>
@@ -33,7 +33,7 @@ const LayoutHeader = ({ children }: { children: React.ReactNode }) => {
           </p>
         </div>
 
-        <p className='text-[1.6rem] mb-[1.4rem] font-semibold md:font-bold font-Helvetica-bold md:text-[2rem]'>
+        <p className='text-[1.6rem] mb-[1.4rem] font-semibold md:font-bold md:text-[2rem]'>
           მოიპოვე 10 საგზურიდან ერთ-ერთი
         </p>
         <p className='text-[1.4rem] opacity-90 mb-[2rem] md:mb-[3.9rem] md:text-[1.6rem]'>
