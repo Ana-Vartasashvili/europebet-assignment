@@ -15,6 +15,10 @@ export default {
         medium: '940px',
       },
 
+      boxShadow: {
+        'orange-shadow': '0px 0px 10px 0px #EF5A21',
+      },
+
       fontFamily: {
         'Helvetica-Neue-55': ['Helvetica Neue LT Std 55 Roman', 'sans-serif'],
         Helvetica: ['Helvetica', 'sans-serif'],

@@ -1,9 +1,11 @@
-import { Layout } from '@/components'
+import { CashGame, Layout } from '@/components'
 
 function App() {
   return (
     <div>
-      <Layout />
+      <Layout>
+        <CashGame />
+      </Layout>
     </div>
   )
 }
