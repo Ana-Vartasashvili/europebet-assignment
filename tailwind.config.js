@@ -11,6 +11,10 @@ export default {
         main_orange: '#EF5A21',
       },
 
+      screens: {
+        medium: '940px',
+      },
+
       fontFamily: {
         'Helvetica-Neue-55': ['Helvetica Neue LT Std 55 Roman', 'sans-serif'],
         Helvetica: ['Helvetica', 'sans-serif'],
