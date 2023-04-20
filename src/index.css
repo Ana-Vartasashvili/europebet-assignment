@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background: #2c3234;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #f05a22;
+    border-radius: 100vh;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @font-face {
   font-family: 'Helvetica Neue LT Std 55 Roman';
   src: url(assets/fonts/Linotype-HelveticaNeueLTGEO55Roman.ttf);
@@ -18,16 +43,6 @@
   font-family: 'Helvetica Bold';
   src: url(assets/fonts/Helvetica-Bold.ttf);
   font-style: normal;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* For IE, Edge and Firefox */
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
 
 html {

@@ -1,5 +1,5 @@
-import { Card, Scrollbar } from '@/components'
-import { infoIcon } from '@/assets'
+import { Card, Scrollbar, ScrollbarItem } from '@/components'
+import { infoIcon, voucherIcon } from '@/assets'
 
 const CashGame = () => {
   return (
@@ -9,12 +9,27 @@ const CashGame = () => {
         <img src={infoIcon} alt='Info icon' className='w-[2rem]' />
       </div>
 
-      <Scrollbar>
-        <div className='rounded-full bg-background_black_shade_4 py-[1rem] px-[1.3rem] justify-between'>
-          <span>1</span>
-          <span>1500₾</span>
-          <span>A კატეგორიის საგზური</span>
+      <div className='flex justify-between mb-[1.6rem] text-gray_shade_2 text-[1.2rem] px-3 pr-12 xs:pr-24'>
+        <p>ადგილი</p>
+        <div className='flex gap-2 items-center  xs:-ml-20'>
+          <img src={voucherIcon} alt='Voucher icon' />
+          <p>ვაუჩერი</p>
         </div>
+        <p>პრიზი</p>
+      </div>
+
+      <Scrollbar>
+        <ScrollbarItem />
+        <ScrollbarItem />
+        <ScrollbarItem />
+        <ScrollbarItem />
+        <ScrollbarItem />
+        <ScrollbarItem />
+        <ScrollbarItem />
+        <ScrollbarItem />
+        <ScrollbarItem />
+        <ScrollbarItem />
+        <ScrollbarItem />
       </Scrollbar>
     </Card>
   )
