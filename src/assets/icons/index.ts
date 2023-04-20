@@ -1,3 +1,6 @@
 export { default as infoIcon } from './example-icon.png'
 export { default as logoImg } from './logo.png'
 export { default as voucherIcon } from './voucher-icon.png'
+export { default as travelIcon } from './travel-icon-sm.png'
+export { default as ticketIcon } from './ticket-icon-sm.png'
+export { default as prizeIcon } from './prize-icon.png'
