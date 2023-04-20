@@ -11,6 +11,7 @@ export default {
         gray_shade_1: '#2C3234',
         gray_shade_2: '#7D7D7D',
         gray_shade_3: '#202324',
+        gray_shade_4: '#BBBBBB',
         main_orange: '#EF5A21',
         orange_shade_1: '#F05A22',
       },

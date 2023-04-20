@@ -1,5 +1,6 @@
 import { logoImg, banner, xIcon } from '@/assets'
 import { Children } from '@/types'
+import { Dropdown } from '../../dropdown'
 
 const LayoutHeader = ({ children }: Children) => {
   return (
@@ -70,6 +71,8 @@ const LayoutHeader = ({ children }: Children) => {
         </div>
 
         {children}
+
+        <Dropdown />
       </div>
     </>
   )

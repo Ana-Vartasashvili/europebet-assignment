@@ -1,6 +1,7 @@
 import { backgroundImg } from '@/assets'
 import { LayoutHeader } from './components'
 import { Children } from '@/types'
+import { Dropdown } from '../dropdown'
 
 const Layout = ({ children }: Children) => {
   return (
