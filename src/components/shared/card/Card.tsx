@@ -1,10 +1,12 @@
 import { CardProps } from './types'
 
-const Card: React.FC<CardProps> = ({ children, title }) => {
+const Card: React.FC<CardProps> = ({ children, title, styles }) => {
   return (
-    <div className='w-full bg-background_black_shade_3 rounded-[1.6rem] text-center pb-[1.8rem]'>
-      <div className='bg-gray_shade_1 py-[2.3rem] rounded-t-[1.6rem] text-[1.6rem] font-bold text-center relative mb-[1.5rem]'>
-        <div className='absolute top-0 h-[0.4rem] w-[12.5rem] left-1/2 -translate-x-1/2 bg-main_orange rounded-b-full shadow-orange-shadow md:w-[25rem]'></div>
+    <div
+      className={`w-full bg-background_black_shade_3 rounded-[1.6rem] text-center pb-[1.8rem] md:bg-background_black_shade_2 md:border-4 md:border-background_black_shade_3 md:rounded-[2rem] ${styles}`}
+    >
+      <div className='bg-gray_shade_1 py-[2.3rem] rounded-t-[1.6rem] text-[1.6rem] font-bold text-center relative mb-[1.5rem] md:mb-[2rem]'>
+        <div className='orange-line' />
         {title}
       </div>
 
