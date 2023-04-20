@@ -1,0 +1,6 @@
+.swiper-wrapper {
+  width: 15rem !important;
+  height: 18rem !important;
+  border-radius: 0.5rem !important;
+  z-index: 10 !important;
+}

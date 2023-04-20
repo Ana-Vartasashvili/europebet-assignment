@@ -5,7 +5,7 @@ const Dropdown = () => {
     <div>
       <h3 className='text-[1.6rem] mb-[2.1rem]'>წესები და პირობები</h3>
 
-      <div className='flex flex-col gap-3'>
+      <div className='flex flex-col gap-3 mb-[4rem]'>
         <DropdownItem text={'როდის იწყება და რა ფორმატით გაიმართება აქცია'}>
           <li>
             აქცია დაიწყება 1 აპრილს 00:00 საათზე და დასრულდება 30 აპრილს 23:59
