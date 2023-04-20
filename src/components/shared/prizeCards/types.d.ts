@@ -1,5 +1,3 @@
-export type PrizeCardProps = {
-  icon: string
-  text: string
-  altText: string
+export type PrizeCardsProps = {
+  text?: string
 }

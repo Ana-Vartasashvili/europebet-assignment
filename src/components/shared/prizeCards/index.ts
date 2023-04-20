@@ -1,1 +1,2 @@
-export { default as PrizeCard } from './PrizeCard'
+export * from './components'
+export { default as PrizeCards } from './PrizeCards'
