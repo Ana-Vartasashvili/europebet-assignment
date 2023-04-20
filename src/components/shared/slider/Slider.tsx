@@ -7,67 +7,44 @@ import {
   sliderBannerCar,
   sliderBannerJackpot,
 } from '@/assets'
+import { SliderItem } from './components'
 
 const Slider = () => {
   return (
-    <>
+    <div>
+      <h2 className='mb-[2.4rem] md:mb-[3.2rem] text-[1.6rem] md:text-[1.8rem]'>
+        მსგავსი აქციები
+      </h2>
+
       <Swiper slidesPerView={'auto'} spaceBetween={15} className='mySwiper'>
         <SwiperSlide>
-          <div className='h-[18rem]'>
-            <img
-              src={sliderBannerCashback}
-              alt=''
-              className='w-[15rem] h-[18rem] rounded-[0.5rem] object-cover'
-            />
-          </div>
+          <SliderItem
+            imgSrc={sliderBannerCashback}
+            altText='Europebet cashback '
+          />
         </SwiperSlide>
+
         <SwiperSlide>
-          <div className='h-[18rem]'>
-            <img
-              src={sliderBannerCar}
-              alt=''
-              className='w-[15rem] h-[18rem] rounded-[0.5rem] object-cover'
-            />
-          </div>
+          <SliderItem imgSrc={sliderBannerCar} />
         </SwiperSlide>
+
         <SwiperSlide>
-          <div className='h-[18rem]'>
-            <img
-              src={sliderBannerJackpot}
-              alt=''
-              className='w-[15rem] h-[18rem] rounded-[0.5rem] object-cover'
-            />
-          </div>
+          <SliderItem imgSrc={sliderBannerJackpot} />
         </SwiperSlide>
+
         <SwiperSlide>
-          <div className='h-[18rem]'>
-            <img
-              src={sliderBannerCashback}
-              alt=''
-              className='w-[15rem] h-[18rem] rounded-[0.5rem] object-cover'
-            />
-          </div>
+          <SliderItem imgSrc={sliderBannerCashback} />
         </SwiperSlide>
+
         <SwiperSlide>
-          <div className='h-[18rem]'>
-            <img
-              src={sliderBannerCar}
-              alt=''
-              className='w-[15rem] h-[18rem] rounded-[0.5rem] object-cover'
-            />
-          </div>
+          <SliderItem imgSrc={sliderBannerCar} />
         </SwiperSlide>
+
         <SwiperSlide>
-          <div className='h-[18rem]'>
-            <img
-              src={sliderBannerJackpot}
-              alt=''
-              className='w-[15rem] h-[18rem] rounded-[0.5rem] object-cover'
-            />
-          </div>
+          <SliderItem imgSrc={sliderBannerJackpot} />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   )
 }
 
