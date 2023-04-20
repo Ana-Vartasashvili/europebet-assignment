@@ -18,7 +18,7 @@ const CashGame = () => {
 
         <Scrollbar />
 
-        <PrizeCards text='„ალტას“ ვაუჩერი' />
+        <PrizeCards text='„ალტას“ ვაუჩერი' styles='md:mb-[2.6rem]' />
 
         <div className='flex justify-center items-center gap-[0.85rem] mb-[2rem] md:mb-[2.2rem]'>
           <p className='font-semibold text-[1.3rem] md:text-[1.6rem]'>
