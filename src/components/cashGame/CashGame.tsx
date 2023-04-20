@@ -33,7 +33,7 @@ const CashGame = () => {
 
         <Scrollbar />
 
-        <PrizeCards />
+        <PrizeCards styles='md:mb-[1.6rem]' />
 
         <div className='text-[1.3rem] md:text-[1.4rem]'>
           <p>
@@ -41,6 +41,8 @@ const CashGame = () => {
             <a
               href='https://www.europebet.com/ka/login?redirect=%2Fka%2Fgames%2Fpoker%2Fcg-poker'
               className='text-main_orange underline'
+              target='_blank'
+              rel='noreferrer'
             >
               პოკერის ლობიში
             </a>

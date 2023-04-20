@@ -16,6 +16,12 @@
     background: #f05a22;
     border-radius: 100vh;
   }
+
+  @media (min-width: 768px) {
+    .scrollbar::-webkit-scrollbar {
+      width: 4px;
+    }
+  }
 }
 
 .scrollbar-hide::-webkit-scrollbar {
