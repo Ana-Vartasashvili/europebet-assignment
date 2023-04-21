@@ -1,8 +1,14 @@
 import { logoImg, banner, xIcon } from '@/assets'
-import { Slider, Dropdown, NavigationItem, CashGame } from '@/components'
+import {
+  Slider,
+  Dropdown,
+  NavigationItem,
+  CashGame,
+  NewYearSeries,
+} from '@/components'
 import { useState } from 'react'
 
-const LayoutHeader = () => {
+const ContentLayout = () => {
   const [activeComponent, setActiveComponent] = useState('Cash Games')
 
   return (
@@ -71,6 +77,7 @@ const LayoutHeader = () => {
         </div>
 
         {activeComponent === 'Cash Games' && <CashGame />}
+        {activeComponent === 'New Year Series' && <NewYearSeries />}
 
         <Dropdown />
         <Slider />
@@ -79,4 +86,4 @@ const LayoutHeader = () => {
   )
 }
 
-export default LayoutHeader
+export default ContentLayout

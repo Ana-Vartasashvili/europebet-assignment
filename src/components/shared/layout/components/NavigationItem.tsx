@@ -9,7 +9,9 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
   return (
     <div
       className={`flex flex-col items-center gap-[0.9rem] md:gap-[0.4rem] w-full h-full  rounded-[0.8rem] py-[2.2rem] text-center ${
-        activeComponent === title ? 'bg-main_orange scale-y-[1.15]' : ''
+        activeComponent === title
+          ? 'bg-main_orange scale-y-[1.15] px-[1.2rem]'
+          : ''
       }`}
       onClick={() => onClick(title)}
     >
