@@ -1,5 +1,5 @@
 import { finalInfoImg } from '@/assets'
-import { FinalTravelList } from '@/components'
+import { FinalTicketList, FinalTravelList } from '@/components'
 
 const FinalStage = () => {
   return (
@@ -34,6 +34,8 @@ const FinalStage = () => {
           <FinalTravelList discardItem={true} />
         </div>
       </div>
+
+      <FinalTicketList />
     </div>
   )
 }
