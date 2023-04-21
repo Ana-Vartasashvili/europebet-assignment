@@ -5,6 +5,7 @@ import {
   NavigationItem,
   CashGame,
   NewYearSeries,
+  FinalStage,
 } from '@/components'
 import { useState } from 'react'
 
@@ -78,6 +79,7 @@ const ContentLayout = () => {
 
         {activeComponent === 'Cash Games' && <CashGame />}
         {activeComponent === 'New Year Series' && <NewYearSeries />}
+        {activeComponent === 'Final Stage' && <FinalStage />}
 
         <Dropdown />
         <Slider />
