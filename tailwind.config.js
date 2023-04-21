@@ -13,11 +13,18 @@ export default {
         gray_shade_3: '#202324',
         gray_shade_4: '#BBBBBB',
         main_orange: '#EF5A21',
+        orange_hover: '#ee4c1e',
         orange_shade_1: '#F05A22',
+        yellow_shade_1: '#FFBE00',
+        yellow_shade_2: '#D7C860',
+        brown_shade_1: '#B78648',
+        green_shade_1: '#094B3D',
       },
 
       screens: {
+        xxs: '320px',
         xs: '450px',
+        mediumSm: '848px',
         medium: '940px',
       },
 

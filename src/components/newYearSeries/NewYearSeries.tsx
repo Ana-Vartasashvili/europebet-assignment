@@ -1,4 +1,4 @@
-import { Card, Scrollbar, PrizeCards } from '@/components'
+import { Card, Scrollbar, PrizeCards, Tournaments } from '@/components'
 import { promoLeftImg, promoRightImg, time, mechanicIcon } from '@/assets'
 
 const NewYearSeries = () => {
@@ -6,8 +6,8 @@ const NewYearSeries = () => {
     <div>
       <Card
         title='ტურნირები და სატელიტები'
-        styles='mb-[2rem] bg-gray_shade_1 md:pb-0 '
-        childrenStyles='px-0 -mt-[1.5rem] md:-mt-[2rem] relative md:px-0'
+        styles='mb-[2rem] bg-gray_shade_1 md:mb-[2.7rem] md:!pb-0'
+        childrenStyles='!px-0 -mt-[1.5rem] md:-mt-[2rem] relative md:!px-0'
       >
         <div className='bg-background_black_shade_2 md:bg-none pt-[1.4rem] rounded-b-[1.6rem]'>
           <p className='text-[1.6rem] font-bold px-[1.7rem]'>
@@ -42,7 +42,7 @@ const NewYearSeries = () => {
             ტურნირების სრული განრიგის სანახავად გადადი პოკერის ლობიში
           </p>
 
-          <button className='bg-main_orange px-[1.8rem] py-[0.65rem] rounded-[5px] font-bold'>
+          <button className='bg-main_orange hover:bg-orange_hover duration-300 ease-in-out px-[1.8rem] py-[0.65rem] rounded-[5px] font-bold'>
             პოკერის ლობი
           </button>
         </div>
@@ -84,6 +84,8 @@ const NewYearSeries = () => {
           </p>
         </div>
       </Card>
+
+      <Tournaments />
     </div>
   )
 }

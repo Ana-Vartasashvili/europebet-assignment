@@ -19,7 +19,7 @@ const Layout = () => {
         <ContentLayout />
 
         <div className='bg-background_black_shade_2 py-[1.4rem] w-full fixed bottom-0 flex justify-center items-center border-t-[0.35rem] border-t-main_orange max-w-[94rem] z-50'>
-          <button className='bg-main_orange px-[3.5rem] py-[0.7rem] rounded-[5px]'>
+          <button className='bg-main_orange hover:bg-orange_hover duration-300 ease-in-out px-[3.5rem] py-[0.7rem] rounded-[5px]'>
             ითამაშე
           </button>
         </div>
