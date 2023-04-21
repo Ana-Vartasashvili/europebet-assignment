@@ -1,4 +1,10 @@
-import { Card, Scrollbar, PrizeCards, Tournaments } from '@/components'
+import {
+  Card,
+  Scrollbar,
+  PrizeCards,
+  Tournaments,
+  InfoCard,
+} from '@/components'
 import { promoLeftImg, promoRightImg, time, mechanicIcon } from '@/assets'
 
 const NewYearSeries = () => {
@@ -42,9 +48,14 @@ const NewYearSeries = () => {
             ტურნირების სრული განრიგის სანახავად გადადი პოკერის ლობიში
           </p>
 
-          <button className='bg-main_orange hover:bg-orange_hover duration-300 ease-in-out px-[1.8rem] py-[0.65rem] rounded-[5px] font-bold'>
+          <a
+            href='https://www.europebet.com/ka/login?redirect=%2Fka%2Fgames%2Fpoker%2Fcg-poker'
+            target='_blank'
+            rel='noreferrer'
+            className='bg-main_orange hover:bg-orange_hover duration-300 ease-in-out px-[1.8rem] py-[0.65rem] rounded-[5px] font-bold'
+          >
             პოკერის ლობი
-          </button>
+          </a>
         </div>
       </Card>
 
@@ -86,6 +97,7 @@ const NewYearSeries = () => {
       </Card>
 
       <Tournaments />
+      <InfoCard />
     </div>
   )
 }
