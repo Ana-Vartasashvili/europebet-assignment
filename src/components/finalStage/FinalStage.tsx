@@ -1,11 +1,10 @@
 import { finalInfoImg } from '@/assets'
-import { Card, FinalTravelItem } from '@/components'
-import { finalItemEventIcon } from '@/assets'
+import { FinalTravelList } from '@/components'
 
 const FinalStage = () => {
   return (
     <div>
-      <div className='bg-background_black_shade_2 border-4 border-background_black_shade_3 p-[2rem] rounded-[1.6rem]'>
+      <div className='bg-background_black_shade_2 border-4 border-background_black_shade_3 p-[2rem] rounded-[1.6rem] mb-[2.6rem]'>
         <img
           src={finalInfoImg}
           alt='Malta'
@@ -29,9 +28,11 @@ const FinalStage = () => {
           </p>
         </div>
 
-        <Card title='A კატეგორიის საგზურში შედის'>
-          <FinalTravelItem />
-        </Card>
+        <div className='flex flex-col gap-[2rem] md:flex-row md:gap-[1.3rem]'>
+          <FinalTravelList />
+          <FinalTravelList />
+          <FinalTravelList discardItem={true} />
+        </div>
       </div>
     </div>
   )

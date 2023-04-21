@@ -35,7 +35,7 @@
 
 @layer components {
   .orange-line {
-    @apply absolute top-0 h-[0.4rem] w-[12.5rem] left-1/2 -translate-x-1/2 bg-main_orange rounded-b-full shadow-orange-shadow md:w-[25rem];
+    @apply absolute top-0 h-[0.4rem] w-[12.5rem] left-1/2 -translate-x-1/2 bg-main_orange rounded-b-full shadow-orange-shadow md:w-[35%];
   }
 }
 

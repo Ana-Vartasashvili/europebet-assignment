@@ -3,4 +3,5 @@ export type CardProps = {
   title: string
   styles?: string
   childrenStyles?: string
+  headerStyles?: string
 }
