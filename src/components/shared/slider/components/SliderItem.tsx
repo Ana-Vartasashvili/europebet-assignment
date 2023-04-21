@@ -8,7 +8,7 @@ const SliderItem: React.FC<SliderItemProps> = ({ imgSrc, altText, styles }) => {
       <div
         className={`h-[9rem] w-full absolute bottom-0 rounded-b-[0.5rem] px-[1.4rem] leading-5 pb-[1.6rem] pt-[2.8rem] md:h-[13rem] flex flex-col justify-end md:pb-[2.4rem] ${styles}`}
       >
-        <p className='mb-[0.8rem] text-[1.2rem] md:text-[1.4rem] md:font-bold'>
+        <p className='mb-[0.8rem] text-[1.2rem] line-clamp-1 md:text-[1.4rem] md:font-bold'>
           Get 300% Cashback
         </p>
         <p className='text-[1.1rem] line-clamp-2 md:text-[1.4rem]'>

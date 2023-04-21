@@ -1,8 +1,10 @@
 import { logoImg, banner, xIcon } from '@/assets'
-import { Children } from '@/types'
-import { Slider, Dropdown } from '@/components'
+import { Slider, Dropdown, NavigationItem, CashGame } from '@/components'
+import { useState } from 'react'
 
-const LayoutHeader = ({ children }: Children) => {
+const LayoutHeader = () => {
+  const [activeComponent, setActiveComponent] = useState('Cash Games')
+
   return (
     <>
       <div className='flex justify-between px-[1.6rem] py-[1.2rem] items-center medium:hidden'>
@@ -47,30 +49,28 @@ const LayoutHeader = ({ children }: Children) => {
           მოხვდი პოკერის ფესტივალზე მალტაში
         </p>
 
-        <div className='w-full bg-gray_shade_1 py-[2.2rem] flex items-center justify-evenly px-[0.8rem] rounded-[0.8rem] mb-[3rem] cursor-pointer'>
-          <div className='flex flex-col items-center gap-[0.9rem] md:gap-[0.4rem]'>
-            <p className='text-[1rem]'>28 ოქტ. - 7 ნოემ.</p>
-            <p className='font-bold  text-[1.2rem] md:text-[1.4rem]'>
-              Cash Games
-            </p>
-          </div>
-
-          <div className='flex flex-col items-center gap-[0.9rem] md:gap-[0.4rem]'>
-            <p className='text-[1rem]'>10 - 29 დეკ.</p>
-            <p className='font-bold text-[1.2rem] md:text-[1.4rem]'>
-              New Year Series
-            </p>
-          </div>
-
-          <div className='flex flex-col items-center gap-[0.9rem] md:gap-[0.4rem]'>
-            <p className='text-[1rem]'>28 ოქტ. - 7 ნოემ.</p>
-            <p className='font-bold text-[1.2rem] md:text-[1.4rem]'>
-              Final Stage
-            </p>
-          </div>
+        <div className='w-full bg-gray_shade_1 flex items-center justify-evenly  rounded-[0.8rem] mb-[3rem] cursor-pointer'>
+          <NavigationItem
+            date='28 ოქტ. - 7 ნოემ.'
+            title='Cash Games'
+            onClick={setActiveComponent}
+            activeComponent={activeComponent}
+          />
+          <NavigationItem
+            date='10 - 29 დეკ.'
+            title='New Year Series'
+            onClick={setActiveComponent}
+            activeComponent={activeComponent}
+          />
+          <NavigationItem
+            date='28 ოქტ. - 7 ნოემ.'
+            title='Final Stage'
+            onClick={setActiveComponent}
+            activeComponent={activeComponent}
+          />
         </div>
 
-        {children}
+        {activeComponent === 'Cash Games' && <CashGame />}
 
         <Dropdown />
         <Slider />
