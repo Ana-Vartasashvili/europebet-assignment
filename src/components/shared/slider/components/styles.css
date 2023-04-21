@@ -1,0 +1,29 @@
+.blue-gradient {
+  background: rgb(13, 100, 155);
+  background: linear-gradient(
+    1deg,
+    rgba(13, 100, 155, 1) 0%,
+    rgba(13, 100, 155, 0.9) 70%,
+    rgba(13, 100, 155, 0) 100%
+  );
+}
+
+.orange-gradient {
+  background: rgb(239, 84, 28);
+  background: linear-gradient(
+    358deg,
+    rgba(239, 84, 28, 1) 60%,
+    rgba(239, 84, 28, 0.9) 71%,
+    rgba(239, 84, 28, 0) 100%
+  );
+}
+
+.purple-gradient {
+  background: rgba(26, 23, 108, 1);
+  background: linear-gradient(
+    358deg,
+    rgba(26, 23, 108, 1) 60%,
+    rgba(26, 23, 108, 0.6) 71%,
+    rgba(26, 23, 108, 0) 100%
+  );
+}
