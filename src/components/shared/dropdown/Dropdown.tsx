@@ -19,7 +19,7 @@ const Dropdown = () => {
               აქცია ჩატარდება სამ ეტაპად:
             </span>
 
-            <ul className='list-disc list-inside space-y-2 ml-5 marker:text-gray_shade_2'>
+            <ul className='list-disc list-inside space-y-2 ml-5 marker:!text-gray_shade_2'>
               <li>Cash Game - 1 აპრილიდან 29 აპრილის ჩათვლით.</li>
               <li>Spring Series - 13 აპრილიდან 29 აპრილის ჩათვლით.</li>
               <li>Final Stage - 30 აპრილი.</li>
@@ -33,14 +33,12 @@ const Dropdown = () => {
               პრიზების მისაღებად გასათვალისწინებელი პირობები:
             </span>
 
-            <ul className='list-disc list-inside space-y-2 ml-5 marker:text-gray_shade_2 leading-7'>
+            <ul className='list-disc space-y-2 ml-5 marker:!text-gray_shade_2 leading-7 list-outside'>
               <li className='space-y-2 mb-5'>
-                <span>
-                  აუცილებელია, რომ გამარჯვებული კამპანიაში მონაწილეობას იღებდეს
-                  საკუთარი პირადი ანგარიშით, წინააღმდეგ შემთხვევაში, მას პრიზი
-                  არ გადაეცემა.
-                </span>
-                <ul className='list-disc list-inside space-y-2 ml-5 marker:text-gray_shade_2'>
+                აუცილებელია, რომ გამარჯვებული კამპანიაში მონაწილეობას იღებდეს
+                საკუთარი პირადი ანგარიშით, წინააღმდეგ შემთხვევაში, მას პრიზი არ
+                გადაეცემა.
+                <ul className='list-disc list-outside space-y-2 ml-5 marker:text-gray_shade_2'>
                   <li>
                     მოქმედი საზღვარგარეთის პასპორტი, მინ. მოქმედების ვადით
                     გამგზავრებიდან 6 თვე.
@@ -70,14 +68,14 @@ const Dropdown = () => {
         </DropdownItem>
 
         <DropdownItem text={'სხვადასხვა'}>
-          <li>
+          <li className='leading-7'>
             ნებისმიერი სახის არასამართლიანი თამაში დაისჯება ევროპაბეთის წესების
             შესაბამისად და ასეთ ქმედებაში შემჩნეული მოთამაშე, კომპანიის
             გადაწყვეტილებით, მოიხსნება გათამაშებიდან და ვერ მიიღებს
             არასამართლიანად მოგებულ პრიზს.
           </li>
 
-          <li>
+          <li className='leading-7'>
             ევროპაბეთი იტოვებს უფლებას ნებისმიერ დროს, ცალმხრივად შეიტანოს
             ცვლილება აქციის პირობებში. კომპანია დაუყოვნებლივ უზრუნველყოფს
             ცვლილებების გამოქვეყნებას, ხოლო მოთამაშე ვალდებულია ეტაპობრივად

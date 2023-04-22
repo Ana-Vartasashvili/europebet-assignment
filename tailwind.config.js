@@ -38,6 +38,22 @@ export default {
         Helvetica: ['Helvetica', 'sans-serif'],
         'Helvetica-bold': ['Helvetica Bold', 'sans-serif'],
       },
+
+      keyframes: {
+        'fade-in': {
+          '0%': {
+            opacity: 0,
+          },
+          '100%': {
+            opacity: 1,
+          },
+        },
+      },
+
+      animation: {
+        'fade-in':
+          'fade-in 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;',
+      },
     },
   },
   plugins: [require('@tailwindcss/line-clamp')],

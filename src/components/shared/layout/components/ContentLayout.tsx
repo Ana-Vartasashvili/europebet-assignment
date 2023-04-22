@@ -10,7 +10,7 @@ import {
 import { useState } from 'react'
 
 const ContentLayout = () => {
-  const [activeComponent, setActiveComponent] = useState('Cash Games')
+  const [activeComponent, setActiveComponent] = useState('New Year Series')
 
   return (
     <>
@@ -34,7 +34,7 @@ const ContentLayout = () => {
       </div>
 
       <div className='w-full px-[1.6rem] md:px-[4.3rem]'>
-        <div className=''>
+        <div>
           <div className='md:absolute top-28 left-10 medium:top-[1.6rem] medium:left-[1.5rem] flex gap-[0.8rem] md:gap-[1.2rem] mb-[1.6rem] items-center  md:bg-background_black_shade_3 md:rounded-full md:py-[0.6rem] md:pr-[1.6rem] md:pl-[0.7rem] md:mb-0'>
             <p className='text-[1.2rem] px-[1rem] py-[0.4rem] rounded-[15px] bg-background_black_shade_3 md:text-[1.3rem] md:font-semibold md:bg-gray-600'>
               სლოტები
