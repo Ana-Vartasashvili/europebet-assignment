@@ -1,5 +1,5 @@
-import { finalInfoImg } from '@/assets'
-import { FinalTicketList, FinalTravelList } from '@/components'
+import { finalInfoImg, mysticalKeyImg } from '@/assets'
+import { Card, FinalTicketList, FinalTravelList, Scrollbar } from '@/components'
 
 const FinalStage = () => {
   return (
@@ -36,6 +36,14 @@ const FinalStage = () => {
       </div>
 
       <FinalTicketList />
+
+      <Card
+        title={
+          <img src={mysticalKeyImg} alt='Golden key' className='mx-auto' />
+        }
+      >
+        <Scrollbar withHeading={false} />
+      </Card>
     </div>
   )
 }
