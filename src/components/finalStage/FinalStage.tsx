@@ -1,5 +1,6 @@
 import { finalInfoImg, mysticalKeyImg } from '@/assets'
 import { Card, FinalTicketList, FinalTravelList, Scrollbar } from '@/components'
+import { mysticalKeyLeaderBoardData } from '@/data'
 
 const FinalStage = () => {
   return (
@@ -41,8 +42,20 @@ const FinalStage = () => {
         title={
           <img src={mysticalKeyImg} alt='Golden key' className='mx-auto' />
         }
+        styles='mb-[5.5rem] md:!pb-[2rem]'
+        childrenStyles='md:!px-[1.6rem]'
       >
-        <Scrollbar withHeading={false} />
+        <p className='hidden text-[1.4rem] mb-[2rem] md:block'>
+          მოთამაშეები გარკვეული საპრიზო ადგილების დაკავების შემთხვევაში მიიღებენ
+          საიდუმლო გასაღებს
+        </p>
+
+        <Scrollbar
+          withHeading={false}
+          listData={mysticalKeyLeaderBoardData}
+          styles='md:mb-[0rem] md:!px-[2.2rem] md:!pr-[2.2rem]'
+          scrollbarListStyles='!mb-[0rem] md:!pr-[1.6rem]'
+        />
       </Card>
     </div>
   )

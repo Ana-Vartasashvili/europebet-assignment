@@ -1,7 +1,9 @@
+export type ScrollbarDataItem = {
+  item: { place: string; voucher: string; prize: string }
+}
 export type ScrollbarProps = {
   withHeading?: boolean
-  voucher?: string
-  prize?: string
-  description?: string
-  children?: React.ReactNode
+  listData?: item[]
+  styles?: string
+  scrollbarListStyles?: string
 }
