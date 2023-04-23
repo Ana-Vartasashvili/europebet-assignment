@@ -1,7 +1,12 @@
 import { backgroundImg, xIcon } from '@/assets'
-import { ContentLayout } from './components'
+import { ContentLayout } from '@/components'
+import { LayoutProps } from './types'
 
-const Layout = () => {
+const Layout: React.FC<LayoutProps> = ({
+  children,
+  setActiveComponent,
+  activeComponent,
+}) => {
   return (
     <div
       className={
@@ -20,7 +25,12 @@ const Layout = () => {
           <img src={xIcon} alt='X icon' className='fixed' />
         </div>
 
-        <ContentLayout />
+        <ContentLayout
+          setActiveComponent={setActiveComponent}
+          activeComponent={activeComponent}
+        >
+          {children}
+        </ContentLayout>
 
         <div className='bg-background_black_shade_2 py-[1.4rem] w-full fixed bottom-0 flex justify-center items-center border-t-[0.35rem] border-t-main_orange max-w-[94rem] z-50'>
           <a

@@ -1,4 +1,4 @@
-import { Card, Scrollbar, PrizeCards, InfoCard, Dropdown } from '@/components'
+import { Card, Scrollbar, PrizeCards, InfoCard } from '@/components'
 import { infoIcon } from '@/assets'
 
 const CashGame = () => {

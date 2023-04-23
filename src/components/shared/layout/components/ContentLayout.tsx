@@ -1,17 +1,12 @@
-import { logoImg, banner, xIcon } from '@/assets'
-import {
-  Slider,
-  Dropdown,
-  NavigationItem,
-  CashGame,
-  NewYearSeries,
-  FinalStage,
-} from '@/components'
-import { useState } from 'react'
+import { logoImg, banner } from '@/assets'
+import { Slider, Dropdown, NavigationItem } from '@/components'
+import { ContentLayoutProps } from './types'
 
-const ContentLayout = () => {
-  const [activeComponent, setActiveComponent] = useState('New Year Series')
-
+const ContentLayout: React.FC<ContentLayoutProps> = ({
+  children,
+  setActiveComponent,
+  activeComponent,
+}) => {
   return (
     <>
       <div className='flex justify-between px-[1.6rem] py-[1.2rem] items-center medium:hidden'>
@@ -73,9 +68,7 @@ const ContentLayout = () => {
           />
         </div>
 
-        {activeComponent === 'Cash Games' && <CashGame />}
-        {activeComponent === 'New Year Series' && <NewYearSeries />}
-        {activeComponent === 'Final Stage' && <FinalStage />}
+        {children}
 
         <Dropdown />
         <Slider />

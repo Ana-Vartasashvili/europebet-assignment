@@ -12,11 +12,13 @@ const PrizeCards: React.FC<PrizeCardsProps> = ({ text, styles }) => {
         altText='Plane icon'
         text='The Festival in Malta-ს საგზური'
       />
+
       <PrizeCard
         icon={ticketIcon}
         altText='Golden ticket icon'
         text='სპეციალური ტურნირის „Cashgame Sharks” ბილეთი, სადაც გათამაშდება The Festival in Malta-ს საგზური'
       />
+
       <PrizeCard
         icon={prizeIcon}
         altText='Prize icon'
