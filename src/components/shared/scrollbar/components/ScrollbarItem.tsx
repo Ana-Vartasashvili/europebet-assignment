@@ -10,7 +10,7 @@ const ScrollbarItem: React.FC<ScrollbarItemProps> = ({
   return (
     <div
       className={`rounded-full bg-background_black_shade_4 py-[1rem] pl-[1.3rem] pr-[1rem] flex items-center border-[2px] min-h-[4.5rem] md:min-h-fit border-gray_shade_1 text-[0.9rem] xs:text-[1rem] font-bold md:text-[1.3rem] md:pt-[1.8rem] md:pb-[1.8rem] md:pl-[2rem] md:pr-[3.6rem] ${
-        !voucher && 'gap-[1.2rem] md:gap-[2rem]'
+        !voucher && 'gap-[1.2rem] md:gap-[2rem] font-normal'
       }`}
     >
       <div className={` text-start ${!voucher ? 'w-auto' : 'w-full'}`}>

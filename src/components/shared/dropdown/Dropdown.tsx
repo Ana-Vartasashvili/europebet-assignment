@@ -34,10 +34,12 @@ const Dropdown = () => {
             </span>
 
             <ul className='list-disc space-y-2 ml-5 marker:!text-gray_shade_2 leading-7 list-outside'>
-              <li className='space-y-2 mb-5'>
-                აუცილებელია, რომ გამარჯვებული კამპანიაში მონაწილეობას იღებდეს
-                საკუთარი პირადი ანგარიშით, წინააღმდეგ შემთხვევაში, მას პრიზი არ
-                გადაეცემა.
+              <li className='space-y-2 mb-3'>
+                <span>
+                  აუცილებელია, რომ გამარჯვებული კამპანიაში მონაწილეობას იღებდეს
+                  საკუთარი პირადი ანგარიშით, წინააღმდეგ შემთხვევაში, მას პრიზი
+                  არ გადაეცემა.
+                </span>
                 <ul className='list-disc list-outside space-y-2 ml-5 marker:text-gray_shade_2'>
                   <li>
                     მოქმედი საზღვარგარეთის პასპორტი, მინ. მოქმედების ვადით

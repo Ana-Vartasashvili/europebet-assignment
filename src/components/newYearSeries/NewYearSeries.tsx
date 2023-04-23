@@ -26,16 +26,16 @@ const NewYearSeries = () => {
             className='mx-auto mb-16'
           />
 
-          <div className='flex justify-between -mt-20 xs:-mt-40 md:-mt-12 mb-[1.6rem]'>
+          <div className='flex justify-between -mt-20 xs:-mt-40 md:-mt-16 mb-[1.6rem] lg:-mt-24'>
             <img
               src={promoLeftImg}
               alt='Playing cards'
-              className='w-1/4 md:w-[21rem]'
+              className='w-1/4 md:w-[27%]'
             />
             <img
               src={promoRightImg}
               alt='Playing cards'
-              className='w-1/4 md:w-[21rem]'
+              className='w-1/4 md:w-[27%]'
             />
           </div>
         </div>

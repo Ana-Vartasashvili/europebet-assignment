@@ -1,4 +1,4 @@
-import { arrowUpIcon } from '@/assets'
+import { arrowDownIcon } from '@/assets'
 import { useState } from 'react'
 import { DropdownItemProps } from './types'
 
@@ -14,7 +14,7 @@ const DropdownItem: React.FC<DropdownItemProps> = ({ text, children }) => {
         <p className='text-gray_shade_4 leading-7 md:text-white'>{text}</p>
 
         <img
-          src={arrowUpIcon}
+          src={arrowDownIcon}
           alt='Arrow down icon'
           className={`w-[1.4rem] ${textIsShown ? 'rotate-180' : ''}`}
         />
