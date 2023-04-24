@@ -2,8 +2,6 @@
 
 ## Table of Contents
 
-[](#)
-
 - [](#)
   - [Tech Stack](#tech-stack)
 - [](#-1)
@@ -56,7 +54,7 @@ or
 yarn install
 ```
 
-4\. after that you can run application from terminal:
+4\. After that you can run application from terminal:
 
 ```sh
 npm run dev
