@@ -3,10 +3,12 @@
 ## Table of Contents
 
 - [](#)
-  - [Tech Stack](#tech-stack)
+  - [Prerequisites](#prerequisites)
 - [](#-1)
-  - [Getting Started](#getting-started)
+  - [Tech Stack](#tech-stack)
 - [](#-2)
+  - [Getting Started](#getting-started)
+- [](#-3)
   - [Project Structure](#project-structure)
 
 ## Prerequisites
