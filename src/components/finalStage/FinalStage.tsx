@@ -42,10 +42,10 @@ const FinalStage = () => {
         title={
           <img src={mysticalKeyImg} alt='Golden key' className='mx-auto' />
         }
-        styles='mb-[5.5rem] md:!pb-[2rem]'
+        styles='mb-[5.5rem] md:!pb-[2.4rem]'
         childrenStyles='md:!px-[1.6rem]'
       >
-        <p className='hidden text-[1.4rem] mb-[2rem] md:block'>
+        <p className='text-[1.4rem] mb-[2rem]'>
           მოთამაშეები გარკვეული საპრიზო ადგილების დაკავების შემთხვევაში მიიღებენ
           საიდუმლო გასაღებს
         </p>
@@ -53,7 +53,7 @@ const FinalStage = () => {
         <Scrollbar
           withHeading={false}
           listData={mysticalKeyLeaderBoardData}
-          styles='md:mb-[0rem] md:!px-[2.2rem] md:!pr-[2.2rem]'
+          styles='md:mb-[0rem] md:!px-[2.2rem] md:!pr-[2.2rem] md:!mb-0'
           scrollbarListStyles='!mb-[0rem] md:!pr-[1.6rem]'
         />
       </Card>
